@@ -1,0 +1,41 @@
+// classe
+public class Aluno {
+    
+    //atributos
+    private String name;
+    private int age;
+    private String registration;
+
+    //construtores
+    public Aluno(String name, int age, String registration) {
+        this.name = name;
+        this.age = age;
+        this.registration = registration; 
+    }
+
+    // metodos
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public void setAge(int age){
+        this.age = age;
+    }
+
+    public int getAge(){
+        return age;
+    }
+
+    public void setRegistration(String registration){
+        this.registration = registration;
+    }
+
+    public String getRegistration(){
+        return registration;
+    }
+
+}
