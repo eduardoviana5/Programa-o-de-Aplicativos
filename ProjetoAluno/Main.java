@@ -4,13 +4,13 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
-        Aluno[] aluno = new Aluno[5];
+        Aluno[] alunos = new Aluno[5];
         String name;
         int age;
         String registration;
         
 
-        for(int i = 0; i < aluno.length; i++){
+        for(int i = 0; i < alunos.length; i++){
         System.out.print("Nome: ");
         name = sc.nextLine();
         System.out.print("Idade: ");
@@ -20,13 +20,13 @@ public class Main {
         registration = sc.nextLine();
         System.out.println();
 
-        aluno[i] = new Aluno(name, age, registration);
+        alunos[i] = new Aluno(name, age, registration);
         }
 
-        for(int i = 0; i < aluno.length; i++){
-            System.out.println("Nome: "+ aluno[i].getName());
-            System.out.println("Idade: "+ aluno[i].getAge());
-            System.out.println("Matricula: "+ aluno[i].getRegistration());
+        for(int i = 0; i < alunos.length; i++){
+            System.out.println("Nome: "+ alunos[i].getName());
+            System.out.println("Idade: "+ alunos[i].getAge());
+            System.out.println("Matricula: "+ alunos[i].getRegistration());
             System.out.println();
         }
         
