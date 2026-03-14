@@ -1,17 +1,17 @@
-public class funcionario extends pessoa{
+public class Funcionario extends Pessoa{
 
     private String cargo;
 
-    //construtor
-    public funcionario(String nome, int idade, String cargo){
+    public Funcionario(String nome, int idade, String cargo){
         super(nome, idade);
         this.cargo = cargo;
     }
 
-    //metodos
-    public void exibirDados(){
-        super.exibirDados();
-        System.out.println("Cargo: " + this.cargo);
+    public void setCargo(String cargo){
+        this.cargo = cargo;
     }
 
+    public String getCargo(){
+        return cargo;
+    }
 }
